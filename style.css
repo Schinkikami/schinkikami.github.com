@@ -228,14 +228,22 @@ a:hover {
 }
 
 .project ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
   list-style: none;
-  padding-left: 0;
+}
+.project ul {
+  list-style: none;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem;
+  padding: 0;
 }
+
 
 .project li {
   margin: 0;
