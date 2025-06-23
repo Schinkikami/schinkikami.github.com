@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hendrik Mehrtens</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img src="images/profile.jpeg" alt="Hendrik Mehrtens" class="profile">
+      <h1>Hendrik Mehrtens</h1>
+      <p>
+        Machine learning researcher at <a href="https://www.dkfz.de">DKFZ</a>, focusing on uncertainty estimation, robustness and explainability of deep learning methods for medical imaging. <br>
+        I did my master's at the <a href="https://www.informatik.tu-darmstadt.de/gris/forschung_1/medical_computing/index.de.jsp">Medical and Environmental Computing lab</a> with Anirban Mukhopadhyay onFunctional Ensemble Diversity.
+      </p>
+            <ul class="icon-list">
+        <li><a href="mailto:mehrtens-hendrik@t-online.de"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https:github.com/Schinkikami"><i class="fab fa-github"></i></a></li>
+        <li><a href="https:linkedin.com/in/hendrik-mehrtens-00b051212"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </section>
+
+
+
+    <section class="projects">
+      <h2>Publications</h2>
+
+      <div class="project-grid">
+
+      <article class="project">
+        <img src="images/paper4.png" alt="Project figure">
+        <h3>Pathologist-like explainable AI for interpretable Gleason grading in prostate cancer</h3>
+        <p>
+          <b>Abstract: </b>      The aggressiveness of prostate cancer, the most common cancer in men worldwide, is primarily assessed based on histopathological data using the Gleason scoring system. While artificial intelligence (AI) has shown promise in accurately predicting Gleason scores, these predictions often lack inherent explainability, potentially leading to distrust in human-machine interactions. To address this issue, we introduce a novel dataset of 1,015 tissue microarray core images, annotated by an international group of 54 pathologists. The annotations provide detailed localized pattern descriptions for Gleason grading in line with international guidelines. Utilizing this dataset, we develop an inherently explainable AI system based on a U-Net architecture that provides predictions leveraging pathologists' terminology. This approach circumvents post-hoc explainability methods while maintaining or exceeding the performance of methods trained directly for Gleason pattern segmentation (Dice score: 0.713 \pm 0.003 trained on explanations vs. 0.691 \pm 0.010 trained on Gleason patterns). By employing soft labels during training, we capture the intrinsic uncertainty in the data, yielding strong results in Gleason pattern segmentation even in the context of high interobserver variability. With the release of this dataset, we aim to encourage further research into segmentation in medical tasks with high levels of subjectivity and to advance the understanding of pathologists' reasoning processes. 
+        </p>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2410.15012">arXiv</a></li>
+          <li><em>Under review at Nature Communications</em></li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <img src="images/paper3.png" alt="Project figure">
+        <h3>Pitfalls of Conformal Predictions for Medical Image Classification</h3>
+        <p>
+          <b>Abstract: </b> Reliable uncertainty estimation is one of the major challenges for medical classification tasks. While many approaches have been proposed, recently the statistical framework of conformal predictions has gained a lot of attention, due to its ability to provide provable calibration guarantees. Nonetheless, the application of conformal predictions in safety-critical areas such as medicine comes with pitfalls, limitations and assumptions that practitioners need to be aware of. We demonstrate through examples from dermatology and histopathology that conformal predictions are unreliable under distributional shifts in input and label variables. Additionally, conformal predictions should not be used for selecting predictions to improve accuracy and are not reliable for subsets of the data, such as individual classes or patient attributes. Moreover, in classification settings with a small number of classes, which are common in medical image classification tasks, conformal predictions have limited practical value.
+        </p>
+        <ul>
+          <li><a href="#">arXiv (TODO)</a></li>
+          <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-44336-7_20">Conference (MICCAI UNSURE)</a></li>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jl2eI8nP7jk?si=2yzr7WaL3nDpfs11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </ul>
+      </article>
+
+      <article class="project">
+        <img src="images/paper2.png" alt="Project figure">
+        <h3>Benchmarking common uncertainty estimation methods with histopathological images under domain shift and label noise</h3>
+        <p>
+          <b>Abstract: </b> In the past years, deep learning has seen an increase in usage in the domain of histopathological applications. However, while these approaches have shown great potential, in high-risk environments deep learning models need to be able to judge their uncertainty and be able to reject inputs when there is a significant chance of misclassification. In this work, we conduct a rigorous evaluation of the most commonly used uncertainty and robustness methods for the classification of Whole Slide Images, with a focus on the task of selective classification, where the model should reject the classification in situations in which it is uncertain. We conduct our experiments on tile-level under the aspects of domain shift and label noise, as well as on slide-level. In our experiments, we compare Deep Ensembles, Monte-Carlo Dropout, Stochastic Variational Inference, Test-Time Data Augmentation as well as ensembles of the latter approaches. We observe that ensembles of methods generally lead to better uncertainty estimates as well as an increased robustness towards domain shifts and label noise, while contrary to results from classical computer vision benchmarks no systematic gain of the other methods can be shown. Across methods, a rejection of the most uncertain samples reliably leads to a significant increase in classification accuracy on both in-distribution as well as out-of-distribution data. Furthermore, we conduct experiments comparing these methods under varying conditions of label noise. Lastly, we publish our code framework to facilitate further research on uncertainty estimation on histopathological data.
+        </p>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2301.01054">arXiv</a></li>
+          <li><a href="https://www.sciencedirect.com/science/article/pii/S1361841523001743">Journal (Medical Image Analysis)</a></li>
+        </ul>
+      </article>
+
+
+      <article class="project">
+        <img src="images/paper1.png" alt="Project figure">
+        <h3>Improving Robustness and Calibration in Ensembles with Diversity Regularization</h3>
+        <p>
+          <b> Abstract: </b> Calibration and uncertainty estimation are crucial topics in high-risk environments. We introduce a new diversity regularizer for classification tasks that uses out-of-distribution samples and increases the overall accuracy, calibration and out-of-distribution detection capabilities of ensembles. [...] 
+        </p>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2201.10908">arXiv</a></li>
+          <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-16788-1_3">Journal (Springer)</a></li>
+        </ul>
+      </article>
+
+
+
+
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
