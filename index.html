@@ -14,7 +14,7 @@
       <h1>Hendrik Mehrtens</h1>
       <p>
         Machine learning researcher at <a href="https://www.dkfz.de">DKFZ</a>, focusing on uncertainty estimation, robustness and explainability of deep learning methods for medical imaging. <br>
-        I did my master's at the <b>Technical University of Darmstadt</b> in the <a href="https://www.informatik.tu-darmstadt.de/gris/forschung_1/medical_computing/index.de.jsp">Medical and Environmental Computing lab</a> with Anirban Mukhopadhyay on Functional Ensemble Diversity.
+        I did my master's at the <b>Technical University of Darmstadt</b> in the <a href="https://www.informatik.tu-darmstadt.de/gris/forschung_1/medical_computing/index.de.jsp">Medical and Environmental Computing lab</a> with Anirban Mukhopadhyay on <a href="https://github.com/Schinkikami/MasterThesisPublic/master_thesis_final.pdf"> Functional Ensemble Diversity</a>.
       </p>
             <ul class="icon-list">
         <li><a href="mailto:mehrtens-hendrik@t-online.de"><i class="fas fa-envelope"></i></a></li>
@@ -83,7 +83,42 @@
         </ul>
       </article>
 
+      <article class="project">
+        <img src="images/award.jpg" alt="Project figure">
+        <h3>Leveraging functional diversity in ensembles to improve uncertainty estimation and calibration</h3>
+        <p>
+          My master thesis written under the supervision of <a href="https://www.linkedin.com/in/camila-gonz%C3%A1lez-618a5b188/">Camila Gonzalez</a> and <a href="https://www.linkedin.com/in/anirban-mukhopadhyay-73944a28/">Anirban Mukhopadhyay</a>. Awarded with the <a href="https://www.dagm.de/award-winners/dagm-yrf-best-masters-thesis-awards"> DAGM YRF: Best Master Thesis Award</a>. <br>
+          <b> Abstract</b>: A calibrated estimate of its own uncertainty, robustness to unknown conditions and the
+ability to detect out-of-distribution data are important properties of machine learning
+models in nearly every application. While multiple approaches have been proposed to
+enhance these properties, recent work shows that ensembles of neural networks, which
+are collections of experts that are used jointly to make predictions, are among the best
+approaches in this regard. The superior performance of the neural network ensemble is
+often attributed to the diversity of the found solutions, called functional diversity, where
+errors made by one ensemble member can be averaged out by the other members, if
+the solutions are independent enough.
+In this work, we investigate the impact of functional diversity in ensembles on the robustness and calibration over multiple architectures, ensemble sizes, network capacities
+and datasets on the tasks of classification and semantic segmentation. For that we use
+an explicit regularization approach to increase the functional diversity of the whole
+ensemble during training by encouraging differences between the individual members’
+predictions.
+We introduce our own Sample Diversity regularizer, that uses out-of-distribution data
+to measure the similarity of found solutions and significantly increases the robustness
+to data corruption.Using ensemble architectures that share parameters between each
+member and by that are computationally more efficient, we find that even these constrained architectures, even with fewer ensemble members, can be better calibrated and
+more robust to perturbations than larger architectures with more ensemble members, if
+diversity regularization is applied to them.
+Our experiments conclude that diversity regularization increases the robustness and
+calibration of ensembles, while our proposed regularizer even increases the ability to
+detect out-of-distribution data. Furthermore, only as few as two diversity regularized
+ensemble members are needed to produce a more robust model. Finally, we show that
+diversity regularization can be applied in tasks of semantic segmentation.
 
+        </p>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1xEYRIc464ZXzRtPw1oTtX1q9YWHwibnz/view?usp=sharing"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" width="40" height="40"/></a></li>
+        </ul>
+      </article>
 
 
 
