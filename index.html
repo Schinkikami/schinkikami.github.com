@@ -13,13 +13,15 @@
       <img src="images/profile.jpeg" alt="Hendrik Mehrtens" class="profile">
       <h1>Hendrik Mehrtens</h1>
       <p>
-        Machine learning researcher at <a href="https://www.dkfz.de">DKFZ</a>, focusing on uncertainty estimation, robustness and explainability of deep learning methods for medical imaging. <br>
+        Machine learning researcher at <a href="https://www.dkfz.de">DKFZ</a>, currently focusing on medical event-series/EHR modelling using Temporal Point Processes, with an interest in modeling and causality.
+        I'm currently working as a shared PhD student of <a href="https://steglelab.org/">Oliver Stegle</a> and <a href="https://mlo-lab.github.io/">Florian Büttner</a> at the <a href="https://www.dkfz.de">German Cancer Research Center (DKFZ)</a>.
+        Previously I did research in uncertainty estimation, robustness and explainability of deep learning methods for medical imaging. <br>
         I did my master's at the <b>Technical University of Darmstadt</b> in the <a href="https://www.informatik.tu-darmstadt.de/gris/forschung_1/medical_computing/index.de.jsp">Medical and Environmental Computing lab</a> with Anirban Mukhopadhyay on <a href="https://github.com/Schinkikami/MasterThesisPublic/master_thesis_final.pdf"> Functional Ensemble Diversity</a>.
       </p>
             <ul class="icon-list">
         <li><a href="mailto:mehrtens-hendrik@t-online.de"><i class="fas fa-envelope"></i></a></li>
-        <li><a href="https:github.com/Schinkikami"><i class="fab fa-github"></i></a></li>
-        <li><a href="https:linkedin.com/in/hendrik-mehrtens-00b051212"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/Schinkikami"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/hendrik-mehrtens-00b051212"><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </section>
 
@@ -31,6 +33,17 @@
 
       <div class="project-grid">
 
+        <article class="project">
+        <img src="images/paper5.png" alt="Project figure">
+        <h3>Flexible Intensities Matter: A comprehensive re-evaluation of Classical and Neural Temporal Point Processes</h3>
+        <p>
+          <b>Abstract: </b> Temporal point processes (TPPs) are the canonical framework for event sequence data, with applications spanning seismology, social media, and electronic health records. Recent neural extensions have been reported to substantially outperform classical baselines such as Hawkes processes, but a systematic comparison across model families and intensity parameterizations is lacking, and large-scale medical benchmarks — arguably one of the most promising application domains — have not been considered. Here, we revisit this comparison through a systematic benchmark of neural and non-neural TPPs on existing datasets and on two large-scale medical benchmarks derived from UK Biobank disease histories and MIMIC-IV ICU records. First, our results show that the previously reported gap between Hawkes processes and neural TPPs largely disappears once Hawkes processes are equipped with flexible and learnable kernels. Second, we find that the flexibility of the intensity parameterization also limits prior neural TPPs: a transformer with a spline-based intensity head outperforms prior neural TPP implementations. Third, our benchmark underscores the value of complex datasets when assessing the performance of TPPs. In fact, exclusively on the MIMIC-IV ICU records did we find clear evidence for structures — time-varying or higher-order interactions beyond what pairwise flexible Hawkes process kernels can capture. Our results guide both future method development and practitioner's model choice. Our TPP framework is released as an open-source package, providing consistent and feature rich implementations of classical and neural TPPs.
+        </p>
+        <ul>
+          <li>Currently under review</li>
+        </ul>
+      </article>
+
       <article class="project">
         <img src="images/paper4.png" alt="Project figure">
         <h3>Pathologist-like explainable AI for interpretable Gleason grading in prostate cancer</h3>
@@ -40,7 +53,7 @@
         <ul>
           <li><a href="https://arxiv.org/abs/2410.15012"><img src="images/arxiv-logo.svg" width="40" height="40"/></a></li>
           <li><a href="https://github.com/Schinkikami/GleasonXAI"><img src="images/github-mark.svg" width="40" height="40"/></a></li>
-          <li><em>Under review at Nature Communications</em></li>
+          <li><em><a href="https://www.nature.com/articles/s41467-025-64712-4">Published in Nature Communications</a></em></li>
         </ul>
       </article>
 
