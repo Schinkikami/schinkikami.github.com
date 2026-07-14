@@ -16,13 +16,13 @@
         Machine learning researcher at <a href="https://www.dkfz.de">DKFZ</a>, currently focusing on medical event-series/EHR modelling using Temporal Point Processes, with an interest in modeling and causality.
         I'm currently working as a shared PhD student of <a href="https://steglelab.org/">Oliver Stegle</a> and <a href="https://mlo-lab.github.io/">Florian Büttner</a> at the <a href="https://www.dkfz.de">German Cancer Research Center (DKFZ)</a>.
         Previously I did research in uncertainty estimation, robustness and explainability of deep learning methods for medical imaging. <br>
-        I did my master's at the <b>Technical University of Darmstadt</b> in the <a href="https://www.informatik.tu-darmstadt.de/gris/forschung_1/medical_computing/index.de.jsp">Medical and Environmental Computing lab</a> with Anirban Mukhopadhyay on <a href="https://github.com/Schinkikami/MasterThesisPublic/master_thesis_final.pdf"> Functional Ensemble Diversity</a>.
+        I did my master's at the <b>Technical University of Darmstadt</b> in the <a href="https://www.informatik.tu-darmstadt.de/gris/forschung_1/medical_computing/index.de.jsp">Medical and Environmental Computing lab</a> with Anirban Mukhopadhyay on <a href="https://drive.google.com/file/d/1xEYRIc464ZXzRtPw1oTtX1q9YWHwibnz/view?usp=sharing">Functional Ensemble Diversity</a>.
       </p>
             <ul class="icon-list">
-        <li><a href="mailto:mehrtens-hendrik@t-online.de"><i class="fas fa-envelope"></i></a></li>
         <li><a href="https://github.com/Schinkikami"><i class="fab fa-github"></i></a></li>
         <li><a href="https://linkedin.com/in/hendrik-mehrtens-00b051212"><i class="fab fa-linkedin"></i></a></li>
       </ul>
+      <p class="email"><i class="fas fa-envelope"></i> hendrikalexander dot mehrtens at dkfz minus heidelberg dot de</p>
     </section>
 
 
@@ -40,7 +40,7 @@
           <b>Abstract: </b> Temporal point processes (TPPs) are the canonical framework for event sequence data, with applications spanning seismology, social media, and electronic health records. Recent neural extensions have been reported to substantially outperform classical baselines such as Hawkes processes, but a systematic comparison across model families and intensity parameterizations is lacking, and large-scale medical benchmarks — arguably one of the most promising application domains — have not been considered. Here, we revisit this comparison through a systematic benchmark of neural and non-neural TPPs on existing datasets and on two large-scale medical benchmarks derived from UK Biobank disease histories and MIMIC-IV ICU records. First, our results show that the previously reported gap between Hawkes processes and neural TPPs largely disappears once Hawkes processes are equipped with flexible and learnable kernels. Second, we find that the flexibility of the intensity parameterization also limits prior neural TPPs: a transformer with a spline-based intensity head outperforms prior neural TPP implementations. Third, our benchmark underscores the value of complex datasets when assessing the performance of TPPs. In fact, exclusively on the MIMIC-IV ICU records did we find clear evidence for structures — time-varying or higher-order interactions beyond what pairwise flexible Hawkes process kernels can capture. Our results guide both future method development and practitioner's model choice. Our TPP framework is released as an open-source package, providing consistent and feature rich implementations of classical and neural TPPs.
         </p>
         <ul>
-          <li>Currently under review</li>
+          <li><span class="status"><i class="fa-solid fa-hourglass-half"></i>Under review</span></li>
         </ul>
       </article>
 
@@ -51,9 +51,9 @@
           <b>Abstract: </b>      The aggressiveness of prostate cancer, the most common cancer in men worldwide, is primarily assessed based on histopathological data using the Gleason scoring system. While artificial intelligence (AI) has shown promise in accurately predicting Gleason scores, these predictions often lack inherent explainability, potentially leading to distrust in human-machine interactions. To address this issue, we introduce a novel dataset of 1,015 tissue microarray core images, annotated by an international group of 54 pathologists. The annotations provide detailed localized pattern descriptions for Gleason grading in line with international guidelines. Utilizing this dataset, we develop an inherently explainable AI system based on a U-Net architecture that provides predictions leveraging pathologists' terminology. This approach circumvents post-hoc explainability methods while maintaining or exceeding the performance of methods trained directly for Gleason pattern segmentation (Dice score: 0.713 \pm 0.003 trained on explanations vs. 0.691 \pm 0.010 trained on Gleason patterns). By employing soft labels during training, we capture the intrinsic uncertainty in the data, yielding strong results in Gleason pattern segmentation even in the context of high interobserver variability. With the release of this dataset, we aim to encourage further research into segmentation in medical tasks with high levels of subjectivity and to advance the understanding of pathologists' reasoning processes. 
         </p>
         <ul>
-          <li><a href="https://arxiv.org/abs/2410.15012"><img src="images/arxiv-logo.svg" width="40" height="40"/></a></li>
-          <li><a href="https://github.com/Schinkikami/GleasonXAI"><img src="images/github-mark.svg" width="40" height="40"/></a></li>
-          <li><em><a href="https://www.nature.com/articles/s41467-025-64712-4">Published in Nature Communications</a></em></li>
+          <li><a href="https://arxiv.org/abs/2410.15012"><i class="fa-solid fa-file-lines"></i>arXiv</a></li>
+          <li><a href="https://github.com/Schinkikami/GleasonXAI"><i class="fa-brands fa-github"></i>Code</a></li>
+          <li><a href="https://www.nature.com/articles/s41467-025-64712-4"><i class="fa-solid fa-book-open"></i>Nature Comms</a></li>
         </ul>
       </article>
 
@@ -64,9 +64,9 @@
           <b>Abstract: </b> Reliable uncertainty estimation is one of the major challenges for medical classification tasks. While many approaches have been proposed, recently the statistical framework of conformal predictions has gained a lot of attention, due to its ability to provide provable calibration guarantees. Nonetheless, the application of conformal predictions in safety-critical areas such as medicine comes with pitfalls, limitations and assumptions that practitioners need to be aware of. We demonstrate through examples from dermatology and histopathology that conformal predictions are unreliable under distributional shifts in input and label variables. Additionally, conformal predictions should not be used for selecting predictions to improve accuracy and are not reliable for subsets of the data, such as individual classes or patient attributes. Moreover, in classification settings with a small number of classes, which are common in medical image classification tasks, conformal predictions have limited practical value.
         </p>
         <ul>
-          <li><a href="https://arxiv.org/abs/2506.18162"><img src="images/arxiv-logo.svg" width="40" height="40"/></a></li>
-          <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-44336-7_20">Conference (MICCAI UNSURE)</a></li>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/jl2eI8nP7jk?si=2yzr7WaL3nDpfs11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <li><a href="https://arxiv.org/abs/2506.18162"><i class="fa-solid fa-file-lines"></i>arXiv</a></li>
+          <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-44336-7_20"><i class="fa-solid fa-book-open"></i>MICCAI UNSURE</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jl2eI8nP7jk"><i class="fa-brands fa-youtube"></i>Talk</a></li>
         </ul>
       </article>
 
@@ -77,9 +77,9 @@
           <b>Abstract: </b> In the past years, deep learning has seen an increase in usage in the domain of histopathological applications. However, while these approaches have shown great potential, in high-risk environments deep learning models need to be able to judge their uncertainty and be able to reject inputs when there is a significant chance of misclassification. In this work, we conduct a rigorous evaluation of the most commonly used uncertainty and robustness methods for the classification of Whole Slide Images, with a focus on the task of selective classification, where the model should reject the classification in situations in which it is uncertain. We conduct our experiments on tile-level under the aspects of domain shift and label noise, as well as on slide-level. In our experiments, we compare Deep Ensembles, Monte-Carlo Dropout, Stochastic Variational Inference, Test-Time Data Augmentation as well as ensembles of the latter approaches. We observe that ensembles of methods generally lead to better uncertainty estimates as well as an increased robustness towards domain shifts and label noise, while contrary to results from classical computer vision benchmarks no systematic gain of the other methods can be shown. Across methods, a rejection of the most uncertain samples reliably leads to a significant increase in classification accuracy on both in-distribution as well as out-of-distribution data. Furthermore, we conduct experiments comparing these methods under varying conditions of label noise. Lastly, we publish our code framework to facilitate further research on uncertainty estimation on histopathological data.
         </p>
         <ul>
-          <li><a href="https://arxiv.org/abs/2301.01054"><img src="images/arxiv-logo.svg" width="40" height="40"/></a></li>
-          <li><a href="https://github.com/DBO-DKFZ/uncertainty-benchmark"><img src="images/github-mark.svg" width="40" height="40"/></a></li>
-          <li><a href="https://www.sciencedirect.com/science/article/pii/S1361841523001743">Journal (Medical Image Analysis)</a></li>
+          <li><a href="https://arxiv.org/abs/2301.01054"><i class="fa-solid fa-file-lines"></i>arXiv</a></li>
+          <li><a href="https://github.com/DBO-DKFZ/uncertainty-benchmark"><i class="fa-brands fa-github"></i>Code</a></li>
+          <li><a href="https://www.sciencedirect.com/science/article/pii/S1361841523001743"><i class="fa-solid fa-book-open"></i>Med. Image Analysis</a></li>
         </ul>
       </article>
 
@@ -88,11 +88,11 @@
         <img src="images/paper1.png" alt="Project figure">
         <h3>Improving Robustness and Calibration in Ensembles with Diversity Regularization</h3>
         <p>
-          <b> Abstract: </b> Calibration and uncertainty estimation are crucial topics in high-risk environments. We introduce a new diversity regularizer for classification tasks that uses out-of-distribution samples and increases the overall accuracy, calibration and out-of-distribution detection capabilities of ensembles. [...] 
+          <b> Abstract: </b> Calibration and uncertainty estimation are crucial topics in high-risk environments. We introduce a new diversity regularizer for classification tasks that uses out-of-distribution samples and increases the overall accuracy, calibration and out-of-distribution detection capabilities of ensembles. Following the recent interest in the diversity of ensembles, we systematically evaluate the viability of explicitly regularizing ensemble diversity to improve calibration on in-distribution data as well as under dataset shift. We demonstrate that diversity regularization is highly beneficial in architectures, where weights are partially shared between the individual members and even allows to use fewer ensemble members to reach the same level of robustness. Experiments on CIFAR-10, CIFAR-100, and SVHN show that regularizing diversity can have a significant impact on calibration and robustness, as well as outof-distribution detection.
         </p>
         <ul>
-          <li><a href="https://arxiv.org/abs/2201.10908"><img src="images/arxiv-logo.svg" width="40" height="40"/></a></li>
-          <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-16788-1_3">Journal (Springer)</a></li>
+          <li><a href="https://arxiv.org/abs/2201.10908"><i class="fa-solid fa-file-lines"></i>arXiv</a></li>
+          <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-16788-1_3"><i class="fa-solid fa-book-open"></i>Springer</a></li>
         </ul>
       </article>
 
@@ -129,7 +129,7 @@ diversity regularization can be applied in tasks of semantic segmentation.
 
         </p>
         <ul>
-          <li><a href="https://drive.google.com/file/d/1xEYRIc464ZXzRtPw1oTtX1q9YWHwibnz/view?usp=sharing"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" width="40" height="40"/></a></li>
+          <li><a href="https://drive.google.com/file/d/1xEYRIc464ZXzRtPw1oTtX1q9YWHwibnz/view?usp=sharing"><i class="fa-solid fa-file-pdf"></i>PDF</a></li>
         </ul>
       </article>
 
